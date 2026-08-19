@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rentags helps rental seekers find a place and landlords find the right tenant." />
+    <meta name="theme-color" content="#173F2D" />
+    <title>Rentags — Your next place starts here</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="#main" class="fixed left-3 top-3 z-[100] -translate-y-24 rounded-full bg-white px-5 py-3 text-sm font-bold text-rentags-green shadow-card transition focus:translate-y-0">Skip to content</a>
+
+    <header id="top" class="absolute inset-x-0 top-0 z-50">
+      <div class="page-container flex h-20 items-center justify-between">
+        <a href="#top" class="inline-flex items-center gap-2.5 font-display text-xl font-black tracking-[-0.04em] text-white" aria-label="Rentags home">
+          <svg class="h-9 w-9" viewBox="0 0 48 48" aria-hidden="true">
+            <path d="M7 22 24 8l17 14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" />
+            <path d="M12 20v19h24V20M19 39V27h10v12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" />
+          </svg>
+          <span>Rentags</span>
+        </a>
+
+        <nav class="hidden items-center gap-8 text-sm font-semibold text-white/80 md:flex" aria-label="Primary navigation">
+          <a class="transition hover:text-white" href="#for-everyone">For everyone</a>
+          <a class="transition hover:text-white" href="#how-it-works">How it works</a>
+          <a class="transition hover:text-white" href="#features">Features</a>
+          <a class="pill-button min-h-10 bg-white px-5 text-rentags-green hover:bg-rentags-mint" href="#get-started">Get started</a>
+        </nav>
+
+        <button id="nav-toggle" class="relative z-[60] grid h-11 w-11 place-items-center rounded-full border border-white/25 text-white md:hidden" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">
+          <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+
+        <nav id="mobile-nav" class="mobile-nav fixed inset-0 z-50 flex flex-col bg-rentags-deep px-6 pb-8 pt-28 text-2xl font-bold text-white md:hidden" aria-label="Mobile navigation">
+          <a class="border-b border-white/10 py-5" href="#for-everyone">For everyone</a>
+          <a class="border-b border-white/10 py-5" href="#how-it-works">How it works</a>
+          <a class="border-b border-white/10 py-5" href="#features">Features</a>
+          <a class="pill-button pill-light mt-8" href="#get-started">Get started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="roof-grid relative overflow-hidden bg-rentags-green pb-24 pt-32 text-white md:pb-32 md:pt-40" aria-labelledby="hero-title">
+        <div class="absolute -right-40 -top-56 h-[34rem] w-[34rem] rounded-full border border-white/10"></div>
+        <div class="absolute -right-24 -top-40 h-[28rem] w-[28rem] rounded-full border border-white/10"></div>
+        <div class="page-container relative grid items-center gap-16 lg:grid-cols-[1fr_.88fr] lg:gap-10">
+          <div class="reveal max-w-2xl">
+            <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.08em] text-white backdrop-blur-sm">
+              <span class="h-2 w-2 rounded-full bg-rentags-sage"></span>
+              A home search that feels human
+            </div>
+            <p class="mb-4 font-display text-lg font-bold text-rentags-sage">Hello, Welcome!</p>
+            <h1 id="hero-title" class="max-w-3xl font-display text-[2.8rem] font-black leading-[.98] tracking-[-0.055em] sm:text-6xl lg:text-[4.65rem]">
+              Find your place.<br />Share your space.
+            </h1>
+            <p class="mt-7 max-w-xl text-base leading-7 text-white/72 sm:text-lg sm:leading-8">
+              Rentags brings seekers and landlords into one friendly rental experience—from the first listing to the final tour.
+            </p>
+            <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a class="pill-button pill-light" href="#for-everyone">
+                Find a rental
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="m7 4 6 6-6 6" /></svg>
+              </a>
+              <a class="pill-button pill-outline" href="#for-everyone">
+                List your property
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path d="m7 4 6 6-6 6" /></svg>
+              </a>
+            </div>
+            <div class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs font-semibold text-white/65">
+              <span class="flex items-center gap-2"><i class="grid h-5 w-5 place-items-center rounded-full bg-white text-[10px] not-italic text-rentags-green">✓</i> Browse with confidence</span>
+              <span class="flex items-center gap-2"><i class="grid h-5 w-5 place-items-center rounded-full bg-white text-[10px] not-italic text-rentags-green">✓</i> Connect directly</span>
+            </div>
+          </div>
+
+          <div class="reveal relative mx-auto min-h-[570px] w-full max-w-[520px] sm:min-h-[610px]" aria-label="Rentags mobile app preview">
+            <div class="absolute left-2 top-20 z-20 w-[168px] rounded-2xl bg-rentags-success p-3 text-white shadow-app sm:-left-6 sm:top-24">
+              <div class="flex items-center gap-2.5">
+                <span class="success-pulse grid h-8 w-8 place-items-center rounded-full bg-white text-sm font-black text-rentags-success">✓</span>
+                <div><strong class="block text-[11px]">Login Successfully</strong><small class="text-[8px] text-white/70">Welcome back to Rentags</small></div>
+              </div>
+            </div>
+
+            <div class="absolute right-0 top-16 z-10 hidden w-[176px] rounded-2xl bg-white p-3 text-rentags-ink shadow-app sm:block" aria-hidden="true">
+              <div class="flex items-center gap-1.5 font-display text-[11px] font-black text-rentags-green">
+                <svg class="h-5 w-5" viewBox="0 0 48 48"><path d="M7 22 24 8l17 14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="5" /><path d="M12 20v19h24V20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4" /></svg>
+                Rentags
+              </div>
+              <strong class="mt-3 block font-display text-xs">Hello, Welcome!</strong>
+              <div class="mt-2 flex h-8 items-center gap-2 rounded-full border border-rentags-line px-3 text-[7px] text-rentags-muted"><span>✉</span>Email address</div>
+              <div class="mt-1.5 flex h-8 items-center gap-2 rounded-full border border-rentags-line px-3 text-[7px] text-rentags-muted"><span>▣</span>Password</div>
+              <div class="mt-2.5 grid h-8 place-items-center rounded-full bg-rentags-green text-[8px] font-bold text-white">Login</div>
+            </div>
+
+            <div class="phone-shell float-slow absolute left-1/2 top-0 h-[570px] w-[285px] -translate-x-1/2 sm:h-[610px] sm:w-[305px]">
+              <div class="phone-notch"></div>
+              <div class="phone-status"><span>9:41</span><span>● ◔</span></div>
+              <div class="px-4 pb-4">
+                <div class="flex items-center justify-between pt-3">
+                  <div><small class="text-[9px] font-semibold text-rentags-muted">Hello, Welcome!</small><strong class="block font-display text-lg font-black text-rentags-deep">Find your home</strong></div>
+                  <div class="icon-circle h-9 w-9 text-xs font-black">JA</div>
+                </div>
+                <div class="mt-4 flex h-10 items-center gap-2 rounded-full border border-rentags-line px-3 text-[9px] text-rentags-muted">
+                  <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><path d="m16 16 4 4" /></svg>
+                  Search city or neighborhood
+                </div>
+                <div class="mt-3 flex gap-1.5 overflow-hidden">
+                  <span class="rounded-full bg-rentags-green px-3 py-1.5 text-[7px] font-bold text-white">Any</span>
+                  <span class="rounded-full border border-rentags-line px-3 py-1.5 text-[7px] font-bold">Apartment</span>
+                  <span class="rounded-full border border-rentags-line px-3 py-1.5 text-[7px] font-bold">House</span>
+                </div>
+                <div class="mt-4 flex items-center justify-between"><strong class="font-display text-xs font-black">Recommended</strong><button class="text-[8px] font-bold text-rentags-green">See all</button></div>
+                <article class="mt-2 overflow-hidden rounded-2xl border border-rentags-line bg-white shadow-sm">
+                  <div class="property-image property-one h-44" role="img" aria-label="Modern white rental house">
+                    <span class="absolute left-3 top-3 z-10 rounded-full bg-white px-2.5 py-1 text-[7px] font-bold text-rentags-green">Available</span>
+                    <span class="absolute right-3 top-3 z-10 grid h-7 w-7 place-items-center rounded-full bg-white text-rentags-green">♡</span>
+                  </div>
+                  <div class="p-3">
+                    <div class="flex items-start justify-between gap-2"><div><strong class="block font-display text-xs font-black">Greenwood Apartment</strong><span class="mt-1 flex items-center gap-1 text-[7px] text-rentags-muted">⌖ Quezon City</span></div><strong class="whitespace-nowrap text-[10px] text-rentags-green">Php 12,500</strong></div>
+                    <div class="mt-3 flex items-center gap-3 border-t border-rentags-line pt-2 text-[7px] font-semibold text-rentags-muted"><span>▰ 2 Beds</span><span>◫ 1 Bath</span><span>⌗ 42 sqft</span><span class="ml-auto">Monthly</span></div>
+                  </div>
+                </article>
+                <div class="mock-nav absolute inset-x-4 bottom-4">
+                  <button class="active" aria-label="Home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 11 8-7 8 7v9h-5v-6H9v6H4z" /></svg></button>
+                  <button aria-label="Inbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v12H8l-4 3z" /></svg></button>
+                  <button aria-label="Notifications"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 8h18c0-1-3-1-3-8M10 21h4" /></svg></button>
+                  <button aria-label="Profile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-later absolute bottom-10 right-0 z-20 w-[185px] rounded-2xl border border-rentags-line bg-rentags-mint p-4 text-rentags-ink shadow-app sm:-right-5 sm:bottom-12">
+              <div class="flex items-center gap-2"><span class="icon-circle h-8 w-8 bg-white">⌂</span><div><small class="block text-[8px] text-rentags-muted">Tour request</small><strong class="text-[10px]">Saturday, 10:00 AM</strong></div></div>
+              <div class="mt-3 h-1.5 overflow-hidden rounded-full bg-white"><span class="block h-full w-3/4 rounded-full bg-rentags-green"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-rentags-line bg-rentags-mint/55 py-5" aria-label="Rentags platform highlights">
+        <div class="page-container grid gap-4 text-center text-xs font-bold text-rentags-green sm:grid-cols-3">
+          <p class="flex items-center justify-center gap-2"><span class="icon-circle h-6 w-6 bg-white text-[10px]">✓</span> Clear property details</p>
+          <p class="flex items-center justify-center gap-2"><span class="icon-circle h-6 w-6 bg-white text-[10px]">◌</span> Direct notifications</p>
+          <p class="flex items-center justify-center gap-2"><span class="icon-circle h-6 w-6 bg-white text-[10px]">⌂</span> One app for both roles</p>
+        </div>
+      </section>
+
+      <section id="for-everyone" class="section-space scroll-mt-16 bg-white" aria-labelledby="roles-title">
+        <div class="page-container">
+          <div class="reveal mx-auto mb-12 max-w-2xl text-center">
+            <span class="section-label"><span class="section-dot"></span>Made for both sides</span>
+            <h2 id="roles-title" class="display-title">The right tools, whichever key you hold.</h2>
+            <p class="section-copy mx-auto">The seeker and landlord experiences share the same calm, familiar visual language—without making either role feel secondary.</p>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-2">
+            <article class="reveal ui-card group overflow-hidden p-5 sm:p-7">
+              <div class="flex items-center justify-between gap-4">
+                <span class="role-tag bg-rentags-green text-white"><span>⌕</span> For seekers</span>
+                <span class="text-xs font-bold text-rentags-muted">Browse · Save · Tour</span>
+              </div>
+              <div class="mt-6 grid items-center gap-6 sm:grid-cols-[1fr_.9fr]">
+                <div>
+                  <h3 class="font-display text-3xl font-black leading-tight tracking-[-0.035em] text-rentags-deep">A place that feels right—not just available.</h3>
+                  <ul class="mt-6 space-y-3 text-sm text-rentags-muted">
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Filter by home type and location</li>
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Compare beds, baths, space, and price</li>
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Schedule a tour from the listing</li>
+                  </ul>
+                </div>
+                <div class="overflow-hidden rounded-2xl border border-rentags-line bg-white transition duration-300 group-hover:-translate-y-1 group-hover:shadow-card">
+                  <div class="property-image property-two h-40" role="img" aria-label="Bright apartment interior"><span class="absolute bottom-3 left-3 z-10 rounded-full bg-white px-2.5 py-1 text-[7px] font-bold text-rentags-green">Apartment</span></div>
+                  <div class="p-3"><strong class="font-display text-sm font-black">Sunlit Studio</strong><p class="mt-1 text-[9px] text-rentags-muted">⌖ Makati City</p><div class="mt-3 flex justify-between border-t border-rentags-line pt-2 text-[8px] font-semibold"><span>1 Bed · 1 Bath</span><span class="text-rentags-green">Php 18,000 / Monthly</span></div></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="reveal ui-card group overflow-hidden p-5 sm:p-7">
+              <div class="flex items-center justify-between gap-4">
+                <span class="role-tag bg-rentags-mint text-rentags-green"><span>⌂</span> For landlords</span>
+                <span class="text-xs font-bold text-rentags-muted">List · Connect · Manage</span>
+              </div>
+              <div class="mt-6 grid items-center gap-6 sm:grid-cols-[1fr_.9fr]">
+                <div>
+                  <h3 class="font-display text-3xl font-black leading-tight tracking-[-0.035em] text-rentags-deep">Your property, presented with clarity.</h3>
+                  <ul class="mt-6 space-y-3 text-sm text-rentags-muted">
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Build a complete property profile</li>
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Receive organized tour requests</li>
+                    <li class="flex gap-2.5"><span class="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-rentags-mint text-[10px] font-black text-rentags-green">✓</span> Keep applicants and updates together</li>
+                  </ul>
+                </div>
+                <div class="rounded-2xl bg-rentags-green p-4 text-white transition duration-300 group-hover:-translate-y-1 group-hover:shadow-green">
+                  <div class="flex items-center justify-between"><div><small class="text-[8px] text-white/60">Property dashboard</small><strong class="block font-display text-base font-black">Good morning, Alex!</strong></div><span class="grid h-8 w-8 place-items-center rounded-full bg-white text-[9px] font-black text-rentags-green">AL</span></div>
+                  <div class="mt-5 grid grid-cols-2 gap-2"><div class="rounded-xl bg-white/10 p-3"><small class="text-[7px] text-white/60">Active listings</small><strong class="mt-1 block text-xl">4</strong></div><div class="rounded-xl bg-white/10 p-3"><small class="text-[7px] text-white/60">Tour requests</small><strong class="mt-1 block text-xl">12</strong></div></div>
+                  <div class="mt-3 rounded-xl bg-white p-3 text-rentags-ink"><div class="flex gap-2"><div class="property-image property-one h-10 w-10 rounded-lg"></div><div class="min-w-0 flex-1"><strong class="block truncate text-[9px]">Greenwood Apartment</strong><span class="text-[7px] text-rentags-muted">3 new inquiries</span></div><span class="text-rentags-green">→</span></div></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section-space scroll-mt-16 bg-rentags-mint/55" aria-labelledby="steps-title">
+        <div class="page-container">
+          <div class="reveal max-w-2xl">
+            <span class="section-label"><span class="section-dot"></span>How it works</span>
+            <h2 id="steps-title" class="display-title">A clear path from hello to home.</h2>
+            <p class="section-copy">Three friendly steps for each role, expressed in the same rounded controls used throughout the app.</p>
+          </div>
+
+          <div class="mt-12 grid gap-6 lg:grid-cols-2">
+            <article class="reveal rounded-card bg-white p-5 shadow-card sm:p-8">
+              <div class="mb-7 flex items-center gap-3"><span class="icon-circle h-11 w-11 text-lg">⌕</span><div><small class="text-[10px] font-bold uppercase tracking-widest text-rentags-muted">Rental seeker</small><h3 class="font-display text-xl font-black">Find your next place</h3></div></div>
+              <ol class="space-y-3">
+                <li class="flex items-center gap-4 rounded-pill border border-rentags-line p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-rentags-green font-display font-black text-white">1</span><div><strong class="block text-sm">Create your account</strong><p class="mt-0.5 text-xs text-rentags-muted">Choose seeker and tell us where you’re looking.</p></div></li>
+                <li class="flex items-center gap-4 rounded-pill border border-rentags-line p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-rentags-green font-display font-black text-white">2</span><div><strong class="block text-sm">Browse and filter</strong><p class="mt-0.5 text-xs text-rentags-muted">Narrow homes by type, details, and location.</p></div></li>
+                <li class="flex items-center gap-4 rounded-pill border border-rentags-line p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-rentags-green font-display font-black text-white">3</span><div><strong class="block text-sm">Schedule a tour</strong><p class="mt-0.5 text-xs text-rentags-muted">Pick a time and receive confirmation instantly.</p></div></li>
+              </ol>
+            </article>
+
+            <article class="reveal rounded-card bg-rentags-green p-5 text-white shadow-green sm:p-8">
+              <div class="mb-7 flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-full bg-white text-lg text-rentags-green">⌂</span><div><small class="text-[10px] font-bold uppercase tracking-widest text-white/55">Landlord</small><h3 class="font-display text-xl font-black">Welcome the right tenant</h3></div></div>
+              <ol class="space-y-3">
+                <li class="flex items-center gap-4 rounded-pill border border-white/15 bg-white/5 p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white font-display font-black text-rentags-green">1</span><div><strong class="block text-sm">Create your account</strong><p class="mt-0.5 text-xs text-white/60">Choose landlord and set up your profile.</p></div></li>
+                <li class="flex items-center gap-4 rounded-pill border border-white/15 bg-white/5 p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white font-display font-black text-rentags-green">2</span><div><strong class="block text-sm">List your property</strong><p class="mt-0.5 text-xs text-white/60">Add photos, pricing, location, and amenities.</p></div></li>
+                <li class="flex items-center gap-4 rounded-pill border border-white/15 bg-white/5 p-3 pr-5"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white font-display font-black text-rentags-green">3</span><div><strong class="block text-sm">Manage requests</strong><p class="mt-0.5 text-xs text-white/60">Review interest and keep tours organized.</p></div></li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section-space scroll-mt-16 bg-white" aria-labelledby="features-title">
+        <div class="page-container">
+          <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div class="max-w-2xl"><span class="section-label"><span class="section-dot"></span>Feels like the app</span><h2 id="features-title" class="display-title">The details that make each tap familiar.</h2></div>
+            <p class="max-w-md text-base leading-7 text-rentags-muted">Filter homes, check amenities, schedule tours, and follow updates with the same interface language from onboarding to notifications.</p>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-12">
+            <article class="reveal feature-snippet lg:col-span-7">
+              <div class="flex items-center justify-between"><div><span class="text-[10px] font-bold uppercase tracking-widest text-rentags-green">Smart filters</span><h3 class="mt-1 font-display text-2xl font-black">What feels like home?</h3></div><span class="icon-circle h-10 w-10">⌕</span></div>
+              <p class="mt-2 text-sm text-rentags-muted">Home Type</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <button class="rounded-pill bg-rentags-green px-5 py-2.5 text-xs font-bold text-white">Any</button>
+                <button class="rounded-pill border border-rentags-line bg-white px-5 py-2.5 text-xs font-bold">Apartment</button>
+                <button class="rounded-pill border border-rentags-line bg-white px-5 py-2.5 text-xs font-bold">House</button>
+                <button class="rounded-pill border border-rentags-line bg-white px-5 py-2.5 text-xs font-bold">Condo</button>
+                <button class="rounded-pill border border-rentags-line bg-white px-5 py-2.5 text-xs font-bold">Dormitory</button>
+              </div>
+              <div class="mt-6 overflow-hidden rounded-2xl border border-rentags-line">
+                <div class="grid grid-cols-[105px_1fr] gap-4 p-3 sm:grid-cols-[150px_1fr]"><div class="property-image property-three min-h-28 rounded-xl" role="img" aria-label="Modern furnished apartment"></div><div class="flex flex-col justify-center"><span class="text-[10px] font-bold text-rentags-green">Condo · Available</span><strong class="mt-1 font-display text-lg font-black">The Grove Residence</strong><span class="mt-1 text-xs text-rentags-muted">⌖ Pasig City</span><div class="mt-3 flex flex-wrap gap-3 text-[10px] font-semibold text-rentags-muted"><span>▰ 2 Beds</span><span>◫ 2 Baths</span><span>⌗ 68 sqft</span></div><strong class="mt-3 text-xs text-rentags-green">Php 24,000 / Monthly</strong></div></div>
+              </div>
+            </article>
+
+            <article class="reveal feature-snippet bg-rentags-mint lg:col-span-5">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-rentags-green">Tour scheduling</span>
+              <h3 class="mt-1 font-display text-2xl font-black">Reschedule Tour</h3>
+              <p class="mt-2 text-sm text-rentags-muted">Choose a new date and time that works for you.</p>
+              <div class="mt-6 rounded-2xl bg-white p-4">
+                <label class="text-[10px] font-bold text-rentags-muted">Preferred date</label>
+                <div class="mt-2 flex h-12 items-center gap-3 rounded-pill border border-rentags-line px-4 text-xs font-semibold"><span class="text-rentags-green">▣</span> Saturday, July 18</div>
+                <label class="mt-4 block text-[10px] font-bold text-rentags-muted">Preferred time</label>
+                <div class="mt-2 flex h-12 items-center gap-3 rounded-pill border border-rentags-line px-4 text-xs font-semibold"><span class="text-rentags-green">◷</span> 10:00 AM</div>
+                <button data-open-modal class="mt-5 h-12 w-full rounded-pill bg-rentags-green text-sm font-bold text-white shadow-green">Schedule Tour</button>
+              </div>
+            </article>
+
+            <article class="reveal feature-snippet lg:col-span-5">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-rentags-green">Property details</span>
+              <h3 class="mt-1 font-display text-2xl font-black">Amenities at a glance</h3>
+              <p class="mt-2 text-sm text-rentags-muted">The practical details stay easy to scan.</p>
+              <div class="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div class="check-row"><span>✓</span>Tiled Flooring</div>
+                <div class="check-row"><span>✓</span>Natural Lighting</div>
+                <div class="check-row"><span>✓</span>Parking Space</div>
+                <div class="check-row"><span>✓</span>Pet Friendly</div>
+                <div class="check-row"><span>✓</span>Air Conditioned</div>
+                <div class="check-row"><span>✓</span>Secure Entry</div>
+              </div>
+            </article>
+
+            <article class="reveal feature-snippet bg-rentags-deep text-white lg:col-span-7">
+              <div class="flex items-start justify-between gap-4"><div><span class="text-[10px] font-bold uppercase tracking-widest text-rentags-sage">Notifications</span><h3 class="mt-1 font-display text-2xl font-black">Know what happens next.</h3><p class="mt-2 max-w-lg text-sm text-white/55">Tour updates, new messages, and listing activity arrive in one organized feed.</p></div><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-white text-rentags-green">♢</span></div>
+              <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                <div class="rounded-2xl bg-white p-4 text-rentags-ink"><div class="flex gap-3"><span class="icon-circle h-10 w-10 shrink-0">✓</span><div><strong class="block text-xs">Tour confirmed</strong><p class="mt-1 text-[10px] leading-4 text-rentags-muted">Your visit to Greenwood Apartment is set for Saturday.</p><small class="mt-2 block text-[8px] text-rentags-green">2 minutes ago</small></div></div></div>
+                <div class="rounded-2xl bg-white/10 p-4"><div class="flex gap-3"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white/10">⌂</span><div><strong class="block text-xs">New listing match</strong><p class="mt-1 text-[10px] leading-4 text-white/55">A new apartment matches your saved filters.</p><small class="mt-2 block text-[8px] text-rentags-sage">18 minutes ago</small></div></div></div>
+              </div>
+              <div class="mock-nav mx-auto mt-6 max-w-sm bg-white !text-rentags-green !shadow-none"><button class="!text-rentags-green/40" aria-label="Home">⌂</button><button class="!text-rentags-green/40" aria-label="Inbox">▱</button><button class="active !bg-rentags-green !text-white" aria-label="Notifications">♢</button><button class="!text-rentags-green/40" aria-label="Profile">○</button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-space bg-rentags-mint/55" aria-labelledby="success-title">
+        <div class="page-container">
+          <div class="reveal overflow-hidden rounded-card bg-white shadow-card">
+            <div class="flex items-center justify-center gap-3 bg-rentags-success px-5 py-4 text-center text-sm font-bold text-white"><span class="grid h-7 w-7 place-items-center rounded-full bg-white text-rentags-success">✓</span> Login Successfully — welcome home.</div>
+            <div class="grid items-center gap-10 p-7 sm:p-10 lg:grid-cols-[.75fr_1.25fr] lg:p-14">
+              <div><span class="section-label"><span class="section-dot"></span>A successful match</span><h2 id="success-title" class="display-title !text-4xl">A simple experience feels like a warm welcome.</h2></div>
+              <blockquote class="rounded-card bg-rentags-mint p-7 sm:p-9">
+                <svg class="mb-5 h-8 w-8 text-rentags-green/30" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M4 21c0-7 3-12 10-15v5c-3 2-4 4-4 7h4v8H4zm15 0c0-7 3-12 10-15v5c-3 2-4 4-4 7h4v8H19z" /></svg>
+                <p class="font-display text-xl font-bold leading-8 text-rentags-deep sm:text-2xl">“I found a place that matched my budget and scheduled a tour without bouncing between apps. Everything felt clear from the first screen.”</p>
+                <footer class="mt-6 flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-full bg-rentags-green text-xs font-bold text-white">MR</span><div><strong class="block text-sm">Mika R.</strong><small class="text-xs text-rentags-muted">Rental seeker</small></div></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-started" class="roof-grid scroll-mt-16 bg-rentags-green py-24 text-white md:py-32" aria-labelledby="cta-title">
+        <div class="page-container reveal text-center">
+          <svg class="mx-auto h-14 w-14 text-rentags-sage" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 22 24 8l17 14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" /><path d="M12 20v19h24V20M19 39V27h10v12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" /></svg>
+          <p class="mt-6 font-display text-lg font-bold text-rentags-sage">Hello, Welcome!</p>
+          <h2 id="cta-title" class="mx-auto mt-3 max-w-3xl font-display text-4xl font-black leading-tight tracking-[-0.045em] sm:text-6xl">Ready to make your next move?</h2>
+          <p class="mx-auto mt-6 max-w-xl text-base leading-7 text-white/65">Whether you’re looking for a home or listing one, Rentags keeps the next step simple.</p>
+          <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row"><button type="button" class="pill-button pill-light active:scale-95">Get early access <span>→</span></button><button type="button" class="pill-button pill-outline active:scale-95">List your property</button></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-rentags-deep py-12 text-white/55">
+      <div class="page-container grid gap-10 md:grid-cols-[1.2fr_.8fr_.8fr]">
+        <div><a href="#top" class="inline-flex items-center gap-2.5 font-display text-xl font-black text-white"><svg class="h-9 w-9" viewBox="0 0 48 48" aria-hidden="true"><path d="M7 22 24 8l17 14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="5" /><path d="M12 20v19h24V20M19 39V27h10v12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4" /></svg>Rentags</a><p class="mt-4 max-w-xs text-sm leading-6">A friendlier way for rental seekers and landlords to meet in the middle.</p></div>
+        <nav class="grid grid-cols-2 gap-8 text-sm" aria-label="Footer navigation"><div class="flex flex-col gap-3"><strong class="text-white">Explore</strong><a class="hover:text-white" href="#for-everyone">For everyone</a><a class="hover:text-white" href="#features">Features</a></div><div class="flex flex-col gap-3"><strong class="text-white">Company</strong><a class="hover:text-white" href="mailto:hello@rentags.app">Contact</a><a class="hover:text-white" href="privacy.html">Privacy</a></div></nav>
+        <div><strong class="text-sm text-white">Follow Rentags</strong><div class="mt-4 flex gap-2"><button type="button" class="grid h-10 w-10 place-items-center rounded-full border border-white/15 transition hover:bg-white/10 active:scale-90" aria-label="Facebook">f</button><button type="button" class="grid h-10 w-10 place-items-center rounded-full border border-white/15 transition hover:bg-white/10 active:scale-90" aria-label="Instagram">◎</button><button type="button" class="grid h-10 w-10 place-items-center rounded-full border border-white/15 transition hover:bg-white/10 active:scale-90" aria-label="LinkedIn">in</button></div></div>
+      </div>
+      <div class="page-container mt-10 flex flex-col gap-2 border-t border-white/10 pt-6 text-[11px] sm:flex-row sm:justify-between"><span>© <span id="year"></span> Rentags. All rights reserved.</span><span>Made for better moves.</span></div>
+    </footer>
+
+    <div id="demo-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-rentags-deep/70 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+      <div class="w-full max-w-sm rounded-modal bg-white p-7 text-center shadow-app sm:p-9">
+        <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-rentags-mint text-2xl font-black text-rentags-green">✓</span>
+        <h2 id="modal-title" class="mt-5 font-display text-2xl font-black text-rentags-deep">Tour request sent!</h2>
+        <p class="mt-3 text-sm leading-6 text-rentags-muted">The landlord has been notified. We’ll let you know as soon as the schedule is confirmed.</p>
+        <button id="close-modal" class="mt-7 h-12 w-full rounded-pill bg-rentags-green text-sm font-bold text-white shadow-green">Continue</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
